@@ -220,7 +220,15 @@ img{
     height: 64.3125em;
     background-color: red;
 }
-
+.card1{
+    width: 14.01em;
+    height: 22,876em;
+    background-color: #0000;
+}
+.card1 img{
+    width: 14.01em;
+    height: 9.9375em;
+}
 /* Até 1199px */
 @media screen and ( max-width: 74.93em){
 
