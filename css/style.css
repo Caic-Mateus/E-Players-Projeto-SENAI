@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
 
 :root{
-
-    --background: #000000;
-    --red:#c20000;
-    --blue: #001f70;
-    --gradiente: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
     
+    --background: #000000;
+    --bgnews: #1E1C21;
+    --red: #C20000;
+    --blue: #001F70;
+    --gradient: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%);
     --font: 'Titillium Web', sans-serif;
 }
 
@@ -16,6 +16,7 @@
     border: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: var(--background);
     font-family: var(--font);
@@ -27,20 +28,23 @@ img{
 .header-top{
     width: 100%;
     height: 5em;
-    /* background-color: tomato; */
+    /* background-color: aliceblue; */
 }
-
 .content{
-    width: 100%;
+    width: 95%;
     max-width: 75em;
     height: 100%;
     /* background-color: aqua; */
     margin: auto;
 }
-
 .flex-spbt-center{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.flex-spar-center{
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 .header-top img{
@@ -50,12 +54,12 @@ img{
     width: 100%;
     max-width: 50em;
 }
-
 .menu ul{
     list-style-type: none;
+
 }
 .menu a{
-    color: #fff;
+    color:#fff;
     text-decoration: none;
     font-size: 1.5em;
     text-transform: uppercase;
@@ -63,10 +67,9 @@ img{
 }
 .menu a:hover{
     background-color: var(--red);
-    text-shadow: 0 0 5px #fff;
+    text-shadow: 0 0 20px #fff;
     text-decoration: underline;
 }
-
 #menu-bars{
     display: none;
 }
@@ -76,14 +79,14 @@ img{
 .banner-container{
     width: 100%;
     height: 100%;
-    /* background-color: rgba(127, 255, 212, 0.404); */
+    /* background-color: rgba(127, 255, 212, 0.39); */
     position: absolute;
     top: 0;
 }
 .banner-content{
-    width: 80%;
+    width: 95%;
     height: 100%;
-    /* background-color: rgba(255, 235, 205, 0.219); */
+    /* background-color: rgba(255, 235, 205, 0.384); */
     margin: auto;
     display: flex;
     justify-content: flex-end;
@@ -96,7 +99,7 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color:#fff;
 }
 .banner-text h1{
     font-size: 5.62em;
@@ -105,7 +108,7 @@ img{
     font-size: 1.87em;
 }
 .banner-text a{
-    color: #fff;
+    color:#fff;
     font-size: 1.87em;
     text-decoration: none;
     text-transform: uppercase;
@@ -113,13 +116,11 @@ img{
     padding: 0.5em 1.2em;
     border-radius: 0.75em;
     margin-top: 2em;
-
 }
 .games{
     width: 100%;
     height: 7.5em;
     /* background-color: yellow; */
-    
 }
 .games ul{
     width: 100%;
@@ -128,72 +129,78 @@ img{
 }
 .games img{
     width: 170px;
-    
+  
 }
 .games ul a:hover img{
     transition: 0.5s;
-    transform: scale(1.5);
-
+    transform:scale(1.5);
 }
-.about{
+
+.about {
     height: 31.25em;
     background-color: var(--blue);
+
     position: relative;
 }
-.about-angulation{
+
+.about-angulation {
     height: 100%;
-    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
 }
-.angulation{
+
+.angulation {
     height: 24.125em;
     width: 100%;
     background-color: var(--background);
 
-    transform: skewY(-4deg);
+    transform: skewY(-4deg);   
 }
-.container-about{
+
+.container-about {
     color: white;
     position: absolute;
-    top: 0;
+    top: 0
 }
-.content-about{
-    width: 80%;
+
+.content-about {
+    width: 95%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
-.text-about{
+
+.text-about {
     width: 50%;
     text-align: justify;
 }
-.text-about h2{
+
+.text-about h2 {
     margin-bottom: 1em;
-    font-size: 2.1875;
-}
-.text-about p{
-    font-size: 1.25em;
-}
-.content-about img{
-    max-width: 31.875em;
-}
-.games-aovivo::after{
-    content: '';
-    border: solid 1px #fff;
-    height: 2em;
-    margin-left: 1em;
-}
-.games-aovivo,.games-embreve{
-    display: flex;
-    color: #fff;
-    align-items: center;
-    font-size: 1.875em;
-    justify-content: space-between;
+    font-size: 2.1875em;
 }
 
+.text-about p {
+    font-size: 1.25em;
+}
+
+.content-about img {
+    max-width: 31.875em;
+}
+.linha{
+    border:solid 1px #fff;
+    height: 3em;
+}
+.games-aovivo, .games-embreve{
+    display: flex;
+    color:#fff;
+    align-items: center;
+    font-size: 1.5625em;/*30px*/
+    justify-content: space-between;
+
+}
 .partida{
     width: 9.5em;
     display: flex;
@@ -202,7 +209,7 @@ img{
     justify-content: space-between;
     margin-left: 1em;
 }
-.time1,.time2{
+.time1, .time2{
     display: flex;
     align-items: center;
 }
@@ -215,279 +222,99 @@ img{
 .time2 img{
     margin-right: 0.5em;
 }
-
-.news{
+/* Início notícias */
+.bg-news{
     width: 100%;
-    height: 61.25em;
-    background-color: #1E1C21;
-}
-
-.news h2{
-    color: white;
-    font-size: 35px;
-    margin-left: 10%;
-    padding: 30px;
-    padding-left: 0px;
-}
-
-.content-news{
-    width: 80%;
-    margin: 0 10%;
-    display: flex;
-}
-
-.news-news{
-    width: 80%;
-}
-
-.content-tabela{
-    width: 20%;
-}
-
-.bloco-news{
-    width: 90%;
-    margin-bottom: 4%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.news-bloco{
-    width: 14.81em;
-    height: 22.87em;
-    background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
-    box-shadow: 1px 1px 20px 4px #000000;
-    display: flex;
-    flex-direction: column;
-    transition: 0.2s;
-}
-
-.news-bloco:hover{
-    transform: scale(1.1);
-}
-
-
-.team-tabela{
-    color: white;
-    margin-bottom: 8px;
-    padding: 10px 0px;
-    border: 5px solid rgba(255,0,0,0.4);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: 0.2s;
-}
-
-.team-tabela:hover{
-    border: 5px solid rgba(255,0,0,1);
-}
-
-.team-tabela p{
-    padding-top: 10px;
-}
-
-.placar-tabela{
-    width: 221px;
     height: auto;
+    background-color: var(--bgnews);
+}
+.news{
+    width: 70%;
+    height: 90%;
+    /* background-color: rgb(167, 167, 167); */
+}
+.news h2, .next-games h2{
+    color: #fff;
+    margin: 1em 0em;
+    font-size: 2.1875em;
+}
+.next-games{
+    width: 25%;
+    height: 90%;
+    /* background-color: rgb(167, 167, 167); */
+    
+}
+.content-news{
     display: flex;
-    align-items: center;
-}
-
-.text-bloco{
-    color: white;
-    margin: 10px;
-    margin-top: 0;
-}
-
-.text-bloco h3{
-    font-family: 18px;
-    text-transform: uppercase;
-}
-
-
-.image-bloco img{
-    padding: 0;
-}
-
-.tabela-news{
-    width: 14.81em;
-    height: 46.93em;
-    background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
-    box-shadow: 1px 1px 20px 4px #000000;
-}
-
-/* Footer - Footer */
-.footer{
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
-
-.content-footer{
-    width: 100%;
-    height: 100%;
-    margin: 10px 10%;
-}
-
-.superior-footer{
-    width: 100%;
-    height: 75%;
-    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
-
-.links-uteis-footer{
-    width: 30%;
+.cardnews{
+    width: 15em;
+    height: 22.5em;
+    background: var(--gradient);
+    color: #fff;
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 10px rgb(97, 97, 97),0px 0px 30px rgb(0, 0, 0);
 }
-
-.links-uteis-footer h4{
-    color: white;
-    text-decoration: underline;
+.cardnews h3{
+    padding: 0.5em 0.6em;
 }
-
-.links-uteis-footer a{
-    color: white;
-    font-size: 12px;
-    text-decoration: none;
+.cardnews p{
+    padding: 0em 0.6em;
 }
-
-.links-uteis-footer a:hover{
-    text-decoration: underline;
+.cardnews a:hover{
+    transition: 0.5s;
 }
-
-.mapa-content{
+.next-games-bg{
+    width: 90%;
+    height: auto;
+    background: var(--gradient); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2.4em 0;
+}
+.next-games-match{
+    width: 100%;
+    height: 6.25em;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-color: red; */
+    font-weight: 700;
+    color: #fff;
+    
 }
-
-.mapa-site-footer h4{
-    color: white;
-    padding: 5px;
-    text-decoration: underline;
-}
-
-.mapa-site-footer ul{
-    display: flex;
-}
-
-.mapa-site-footer a{
-    color: white;
-    margin: 10px;
-    transition: 0.2s;
-}
-
-.mapa-site-footer a:hover{
-    text-decoration: underline;
-}
-
-.social-medias-footer{
-    width: 30%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.social-medias-footer h4{
-    color: white;
-    padding: 7px;
-    text-decoration: underline;
-}
-
-.redes-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.links-redes{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.links-redes img{
-    transition: 0.2s;
-}
-
-.links-redes img:hover{
-    transform: scale(1.2);
-}
-
-.line-footer{
+.teams{
     width: 100%;
-    border: 1px solid #cdcdcd;
-    background-color: #cdcdcd;
-    margin: 25px 0;
-}
-
-.inferior-footer{
-    margin-bottom: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.next-games-match div{
+    display: flex;
     align-items: center;
 }
-
-.logo-footer{
-    width: 30%;
+.next-games-match img{
+    max-width: 2.5em;
 }
-
-.logo-footer img{
-    width: 100%;
-    max-width: 250px;
-    transition: 0.2s;
+.next-games-match > p{
+    margin-top: 1em;
 }
-
-.logo-footer img:hover{
-    transform: scale(1.1);
-}
-
-.direitos-footer{
-    color: white;
-}
-
-.direitos-footer span:hover{
-    color: var(--red);
-}
-
-.buttons-footer{
-    width: 30%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.buttons-footer ul{
-    display: flex;
-}
-
-.buttons-footer a{
-    color: white;
-    padding: 10px;
-}
-
-.buttons-footer a:hover{
-    text-decoration: underline;
-}
-
-
-
 /* Até 1199px */
-@media screen and ( max-width: 74.93em){
+@media screen and (max-width: 74.93em){
 
 }
 /* Até 991px */
-@media screen and ( max-width: 61.93em){
-
+@media screen and (max-width: 61.93em){
+    
 }
-/* Até 767px */
-@media screen and ( max-width: 47.93em){
-
+/* até 767px */
+@media screen and (max-width: 47.93em){
+   
 }
 /* Até 576px */
-@media screen and ( max-width: 36em){
+@media screen and (max-width: 36em){
 
 }
-
-
