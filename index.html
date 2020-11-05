@@ -16,14 +16,15 @@
         <div class="content flex-spbt-center">
             <img src="img/logo.svg" alt="Logo E-Players">
             <nav class="menu">
-                <ul class="flex-spbt-center">
+                <ul id="meuslinks" class="meuslinks flex-spbt-center">
+                    
                     <li><a href="#">Início</a></li>
                     <li><a href="#">Campeonatos</a></li>
                     <li><a href="#">Resultados</a></li>
                     <li><a href="#">Notícias</a></li>
                     <li><a href="#">Cadastro/Login</a></li>
                 </ul>
-                <a href="#" id="menu-bars">
+                <a href="#" class="btnMenu" onclick="botaodomenu()">
                     <i class="fas fa-bars"></i>
                 </a>
             </nav>
@@ -80,7 +81,8 @@
             </div>
         </section><!--Fim About-->
         <section class="games">
-            <div class="content flex-spar-center">
+            <div class="versus content flex-spar-center">
+                
                 <div class="games-aovivo">
                     <h2>Ao<br>Vivo</h2>
                     <div class="partida">
@@ -96,6 +98,7 @@
                     </div>
                 </div><!--fim games aovivo-->
              <div class="linha"></div>
+             
                 <div class="games-embreve">
                     <h2>Em<br>Breve</h2>
                     <div class="partida">
@@ -121,6 +124,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section><!--Fim section Games-->
         <div class="bg-news">
@@ -294,6 +298,7 @@
                         <li><a href="#">Login/Cadastro</a></li>
                         
                     </ul>
+                    
                 </div>
             </div>
         <img class="logo-rodape" src="img/logo.svg" alt="Logo E-Players">
@@ -305,6 +310,7 @@
             </form>
             <div class="siga-nos">
                 <h2>Siga-nos em:</h2>
+            
                 <a href="#"><img src="img/logo-instagram.png" alt="Logo do Instagram"></a>
                 <a href="#"><img src="img/logo-face.png" alt="Logo do Facebook"></a>
                 <a href="#"><img src="img/logo-ytb.png" alt="Logo do Youtube"></a>
@@ -313,7 +319,16 @@
 
         </div>
     </footer>
-
+    <script>
+        function botaodomenu() {
+          var ulDoMenu = document.getElementById("meuslinks");
+          if (ulDoMenu.style.display === "flex") {
+            ulDoMenu.style.display = "none";
+          } else {
+            ulDoMenu.style.display = "flex";
+          }
+        }
+     </script>
 </body>
 
 </html>
