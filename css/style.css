@@ -416,15 +416,64 @@ img{
 
 /* Até 991px */
 @media screen and (max-width: 61.93em){
-    .header-top img{
-        max-width: 21.18em;
-    }
+   .content{
+    font-size: 0.60em;
+}
+.menu a:hover{
+    background-color: var(--red);
+    text-shadow: 0 0 50px #fff;
+    text-decoration: underline;}
+   
+ .banner-text{
+    font-size: 10px;
+    width: auto;
+
+}
+.games{
+    width: auto;
+}
+.games img{
+    width: 120px;
+    height: auto;
+  
+}
+.games ul a:hover img{
+    transition: 0.5s;
+    transform:scale(1.3);
+}
+
+.angulation {
+    height: 24.125em;
+    width: 100%;
+    background-color: var(--background);
+
+    transform: skewY(-3deg);   
+}
+
+.text-about {
+    width: 50%;
+    text-align: justify;
+}
+
+.text-about h2 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    margin-top: 2em;
+}
+
+.text-about p {
+    font-size: 0.90em;
+}
+
+.content-about img {
+    max-width: 28em;
+}
+.partida img{
+    width: 2em;
 }
 /* até 767px */
 @media screen and (max-width: 47.93em){
    
 }
 /* Até 576px */
-@media screen and (max-width: 36em){
-
-}
+@media screen and (max-width:36em){}
