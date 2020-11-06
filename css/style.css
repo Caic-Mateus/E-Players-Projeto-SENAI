@@ -58,6 +58,7 @@ img{
 .menu-cabecalho ul{
     display: flex;
     justify-content: space-between; 
+    list-style-type: none;
 }
 
 .menu-cabecalho a{
@@ -69,7 +70,7 @@ img{
 }
 
 .menu-cabecalho a:hover{
-    background-color: var(--blue);
+    background-color: var(--red);
 }
 
 #header-bars{
@@ -515,11 +516,11 @@ img{
         font-size: 1em;
         text-transform: uppercase;
         transition: 0.1s;
-        border: 2px solid rgb(194, 0, 0, 0.3);
+        border: 2px solid white;
     }
 
     .menu-cabecalho-response a:hover{
-        border: 2px solid rgb(194, 0, 0, 1);
+        border: 2px solid red;
     }
      .banner-text{
         font-size: 7px;
